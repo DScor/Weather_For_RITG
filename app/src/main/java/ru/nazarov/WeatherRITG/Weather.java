@@ -22,8 +22,8 @@ class Weather {
         numberFormat.setMaximumFractionDigits(0); // Запрещает числа почле запятой
 
         this.dayOfWeek = convertTimeStampToDay(timeStamp); // Получение названия дня недели и инициализации dayOfWeek
-        this.minTemp = numberFormat.format(minTemp) + "\u00B0F"; // Минимальная температура по Фаренгейту
-        this.maxTemp = numberFormat.format(maxTemp) + "\u00B0F"; // Максимальная температура по Фаренгейту
+        this.minTemp = numberFormat.format(minTemp) + "\u00B0C"; // Минимальная температура по Фаренгейту
+        this.maxTemp = numberFormat.format(maxTemp) + "\u00B0C"; // Максимальная температура по Фаренгейту
         this.humidity = NumberFormat.getPercentInstance().format(humidity / 100.0);
         this.description = description; // Инициализирует описание погодных условий
         this.iconURL = "http://openweathermap.org/img/w/" + iconName + ".png"; // Изображение погодных условий для погоды

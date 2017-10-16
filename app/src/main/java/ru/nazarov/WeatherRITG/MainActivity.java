@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
 
-            String urlString = baseUrl + URLEncoder.encode(city, "UTF-8") + "&units=imperial&cnt=16&APPID=" + apiKey;
+            String urlString = baseUrl + URLEncoder.encode(city, "UTF-8") + "&units=metric&cnt=16&APPID=" + apiKey;
             return new URL(urlString);
         }
         catch (Exception e) {
