@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ru.nazarov.WeatherRITG">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- TODO: запросить разрешения PROTECTION_NORMAL в коде для обеспечения совместимости с более ранними версиями Android -->
+//пока что не реализовано
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="WeatheForRiTG"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="ru.nazarov.WeatherRITG.MainActivity"
+            android:label="WeatheForRiTG"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
